@@ -33,8 +33,8 @@
 
 ## Fase 1: Python de nuevo (backend)
 
-- [ ] **T1.1** Script `hola.py` que pregunta tu nombre y saluda: input, variables y f-strings.
-- [ ] **T1.2** Listas y diccionarios: guardar un "historial de chat" en memoria.
+- [x] **T1.1** Script `hola.py` que pregunta tu nombre y saluda: input, variables y f-strings.
+- [x] **T1.2** Listas y diccionarios: guardar un "historial de chat" en memoria.
 - [ ] **T1.3** Funciones y módulos: separar el código en dos archivos e importar.
 - [ ] **T1.4** Entornos virtuales y paquetes (`uv` o `venv` y `pip`): entender para qué sirven.
 - [ ] **T1.5** Primer servidor con FastAPI: la ruta `/health` devuelve `{"ok": true}`, y la abres en el navegador.
@@ -86,8 +86,6 @@
 
 
 ## Notas de sesiones
-
-
 
 - 2026-10-03 · T0.1 · pwd, ls, cd, mkdir en PowerShell (Warp); proyecto en `C:\Users\steve\Documents\companion-app` · sin trabas
 - 2026-10-03 · T0.2 · todas las herramientas instaladas, nada que instalar · sin trabas
