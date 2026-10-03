@@ -1,4 +1,5 @@
 import datetime
+from chat_funciones import responder, guardar
 
 historial = []
 
@@ -7,9 +8,11 @@ while True:
     mensaje = input("¿Qué quieres decir? ")
     hora = datetime.datetime.now().strftime("%H:%M")
     if mensaje.lower() == "salir":
-        break
-    historial.append({"role": "user", "content": mensaje, "hora": hora})
-    historial.append({"role": "assistant", "content": "Dijiste: " + mensaje, "hora": hora})
+        break   
+    guardar(historial, "user", mensaje, hora)
+    respuesta = responder(mensaje)
+    print(respuesta)
+    guardar(historial, "assistant", respuesta, hora)
     
 
 for mensaje in historial:
