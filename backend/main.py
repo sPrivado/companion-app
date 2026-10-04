@@ -1,4 +1,9 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
+from cerebro import responder
+
+class MensajeEntrada(BaseModel):
+    texto: str
 
 app = FastAPI()
 
@@ -9,3 +14,7 @@ async def root():
 @app.get("/health")
 async def health():
     return {"ok": True}
+
+@app.post("/chat")
+async def chat(mensaje: MensajeEntrada):
+    return {"respuesta": responder(mensaje.texto)}
